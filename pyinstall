@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+ 
+"""
+pip install pyinstaller
+pyinstaller -F -w WinPollManager.py
+"""
+import os
+from PyInstaller.__main__ import run
+ 
+ 
+if __name__ == '__main__':
+    params = ['services\\PyTestService.py', '-F', '-c', '--icon=services\\favicon.ico']
+    run(params)
